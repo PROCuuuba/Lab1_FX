@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.lab1_fx.ConverterController">
+
+    <Label text="Кулинарный конвертер" style="-fx-font-size: 18px;"/>
+
+    <TextField fx:id="valueField" promptText="Введите значение"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <ComboBox fx:id="fromCombo"/>
+        <Label text="→"/>
+        <ComboBox fx:id="toCombo"/>
+    </HBox>
+
+    <Button text="Конвертировать"
+            onAction="#handleConvert"/>
+
+    <Label fx:id="resultLabel" text="Результат появится здесь"/>
+
+</VBox>
